@@ -1,0 +1,11 @@
+[2023-03-11 22:06:50,481 ] 14 root-INFO->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-11 22:06:50,481 ] 21 root-INFO-Exporting collection data as pandas dataframe
+[2023-03-11 22:06:50,484 ] 14 root-INFO-Found columns: Index([], dtype='object')
+[2023-03-11 22:06:50,484 ] 18 root-INFO-Row and columns in df: (0, 0)
+[2023-03-11 22:06:50,484 ] 27 root-INFO-Save data in feature store
+[2023-03-11 22:06:50,484 ] 32 root-INFO-Create feature store folder if not available
+[2023-03-11 22:06:50,484 ] 36 root-INFO-Save df to feature store folder
+[2023-03-11 22:06:50,486 ] 41 root-INFO-split dataset into train and test set
+[2023-03-11 22:06:50,487 ] 14 root-INFO-Creating model resolver object
+[2023-03-11 22:06:50,488 ] 16 root-INFO-Reading file :/config/workspace/UCI_Credit_Card.csv
+[2023-03-11 22:06:50,555 ] 21 root-INFO-Loading transformer to transform dataset

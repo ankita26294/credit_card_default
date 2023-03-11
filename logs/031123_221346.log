@@ -1,0 +1,118 @@
+[2023-03-11 22:13:47,337 ] 14 root-INFO->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-11 22:13:47,337 ] 21 root-INFO-Exporting collection data as pandas dataframe
+[2023-03-11 22:13:47,840 ] 14 root-INFO-Found columns: Index(['_id', 'ID', 'LIMIT_BAL', 'SEX', 'EDUCATION', 'MARRIAGE', 'AGE',
+       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
+       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
+       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6',
+       'default.payment.next.month'],
+      dtype='object')
+[2023-03-11 22:13:47,841 ] 16 root-INFO-Dropping column: _id 
+[2023-03-11 22:13:47,850 ] 18 root-INFO-Row and columns in df: (30000, 25)
+[2023-03-11 22:13:47,850 ] 27 root-INFO-Save data in feature store
+[2023-03-11 22:13:47,850 ] 32 root-INFO-Create feature store folder if not available
+[2023-03-11 22:13:47,850 ] 36 root-INFO-Save df to feature store folder
+[2023-03-11 22:13:48,353 ] 41 root-INFO-split dataset into train and test set
+[2023-03-11 22:13:48,360 ] 45 root-INFO-create dataset directory folder if not available
+[2023-03-11 22:13:48,361 ] 50 root-INFO-Save df to feature store folder
+[2023-03-11 22:13:48,859 ] 62 root-INFO-Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/03112023__221347/data_ingestion/feature_store/default.csv', train_file_path='/config/workspace/artifact/03112023__221347/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/03112023__221347/data_ingestion/dataset/test.csv')
+[2023-03-11 22:13:48,859 ] 21 root-INFO-Exporting collection data as pandas dataframe
+[2023-03-11 22:13:49,421 ] 14 root-INFO-Found columns: Index(['_id', 'ID', 'LIMIT_BAL', 'SEX', 'EDUCATION', 'MARRIAGE', 'AGE',
+       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
+       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
+       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6',
+       'default.payment.next.month'],
+      dtype='object')
+[2023-03-11 22:13:49,421 ] 16 root-INFO-Dropping column: _id 
+[2023-03-11 22:13:49,430 ] 18 root-INFO-Row and columns in df: (30000, 25)
+[2023-03-11 22:13:49,430 ] 27 root-INFO-Save data in feature store
+[2023-03-11 22:13:49,430 ] 32 root-INFO-Create feature store folder if not available
+[2023-03-11 22:13:49,430 ] 36 root-INFO-Save df to feature store folder
+[2023-03-11 22:13:49,934 ] 41 root-INFO-split dataset into train and test set
+[2023-03-11 22:13:49,939 ] 45 root-INFO-create dataset directory folder if not available
+[2023-03-11 22:13:49,939 ] 50 root-INFO-Save df to feature store folder
+[2023-03-11 22:13:50,447 ] 62 root-INFO-Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/03112023__221347/data_ingestion/feature_store/default.csv', train_file_path='/config/workspace/artifact/03112023__221347/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/03112023__221347/data_ingestion/dataset/test.csv')
+[2023-03-11 22:13:50,447 ] 19 root-INFO->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-11 22:13:50,447 ] 107 root-INFO-Reading base dataframe
+[2023-03-11 22:13:50,509 ] 40 root-INFO-selecting column name which contains null above to 0.2
+[2023-03-11 22:13:50,509 ] 43 root-INFO-Columns to drop: []
+[2023-03-11 22:13:50,511 ] 113 root-INFO-Reading train dataframe
+[2023-03-11 22:13:50,577 ] 115 root-INFO-Reading test dataframe
+[2023-03-11 22:13:50,591 ] 118 root-INFO-Drop null values colums from train df
+[2023-03-11 22:13:50,593 ] 40 root-INFO-selecting column name which contains null above to 0.2
+[2023-03-11 22:13:50,594 ] 43 root-INFO-Columns to drop: []
+[2023-03-11 22:13:50,597 ] 120 root-INFO-Drop null values colums from test df
+[2023-03-11 22:13:50,598 ] 40 root-INFO-selecting column name which contains null above to 0.2
+[2023-03-11 22:13:50,598 ] 43 root-INFO-Columns to drop: []
+[2023-03-11 22:13:50,633 ] 129 root-INFO-Is all required columns present in train df
+[2023-03-11 22:13:50,633 ] 131 root-INFO-Is all required columns present in test df
+[2023-03-11 22:13:50,633 ] 135 root-INFO-As all column are available in train df hence detecting data drift
+[2023-03-11 22:13:50,633 ] 85 root-INFO-Hypothesis ID: float64, float64 
+[2023-03-11 22:13:50,640 ] 85 root-INFO-Hypothesis LIMIT_BAL: float64, float64 
+[2023-03-11 22:13:50,673 ] 85 root-INFO-Hypothesis SEX: float64, float64 
+[2023-03-11 22:13:50,702 ] 85 root-INFO-Hypothesis EDUCATION: float64, float64 
+[2023-03-11 22:13:50,733 ] 85 root-INFO-Hypothesis MARRIAGE: float64, float64 
+[2023-03-11 22:13:50,763 ] 85 root-INFO-Hypothesis AGE: float64, float64 
+[2023-03-11 22:13:50,797 ] 85 root-INFO-Hypothesis PAY_0: float64, float64 
+[2023-03-11 22:13:50,829 ] 85 root-INFO-Hypothesis PAY_2: float64, float64 
+[2023-03-11 22:13:50,860 ] 85 root-INFO-Hypothesis PAY_3: float64, float64 
+[2023-03-11 22:13:50,892 ] 85 root-INFO-Hypothesis PAY_4: float64, float64 
+[2023-03-11 22:13:50,923 ] 85 root-INFO-Hypothesis PAY_5: float64, float64 
+[2023-03-11 22:13:50,954 ] 85 root-INFO-Hypothesis PAY_6: float64, float64 
+[2023-03-11 22:13:50,984 ] 85 root-INFO-Hypothesis BILL_AMT1: float64, float64 
+[2023-03-11 22:13:50,993 ] 85 root-INFO-Hypothesis BILL_AMT2: float64, float64 
+[2023-03-11 22:13:51,001 ] 85 root-INFO-Hypothesis BILL_AMT3: float64, float64 
+[2023-03-11 22:13:51,010 ] 85 root-INFO-Hypothesis BILL_AMT4: float64, float64 
+[2023-03-11 22:13:51,018 ] 85 root-INFO-Hypothesis BILL_AMT5: float64, float64 
+[2023-03-11 22:13:51,053 ] 85 root-INFO-Hypothesis BILL_AMT6: float64, float64 
+[2023-03-11 22:13:51,087 ] 85 root-INFO-Hypothesis PAY_AMT1: float64, float64 
+[2023-03-11 22:13:51,095 ] 85 root-INFO-Hypothesis PAY_AMT2: float64, float64 
+[2023-03-11 22:13:51,129 ] 85 root-INFO-Hypothesis PAY_AMT3: float64, float64 
+[2023-03-11 22:13:51,137 ] 85 root-INFO-Hypothesis PAY_AMT4: float64, float64 
+[2023-03-11 22:13:51,144 ] 85 root-INFO-Hypothesis PAY_AMT5: float64, float64 
+[2023-03-11 22:13:51,177 ] 85 root-INFO-Hypothesis PAY_AMT6: float64, float64 
+[2023-03-11 22:13:51,184 ] 85 root-INFO-Hypothesis default.payment.next.month: int64, float64 
+[2023-03-11 22:13:51,214 ] 138 root-INFO-As all column are available in test df hence detecting data drift
+[2023-03-11 22:13:51,214 ] 85 root-INFO-Hypothesis ID: float64, float64 
+[2023-03-11 22:13:51,218 ] 85 root-INFO-Hypothesis LIMIT_BAL: float64, float64 
+[2023-03-11 22:13:51,222 ] 85 root-INFO-Hypothesis SEX: float64, float64 
+[2023-03-11 22:13:51,224 ] 85 root-INFO-Hypothesis EDUCATION: float64, float64 
+[2023-03-11 22:13:51,227 ] 85 root-INFO-Hypothesis MARRIAGE: float64, float64 
+[2023-03-11 22:13:51,240 ] 85 root-INFO-Hypothesis AGE: float64, float64 
+[2023-03-11 22:13:51,244 ] 85 root-INFO-Hypothesis PAY_0: float64, float64 
+[2023-03-11 22:13:51,258 ] 85 root-INFO-Hypothesis PAY_2: float64, float64 
+[2023-03-11 22:13:51,261 ] 85 root-INFO-Hypothesis PAY_3: float64, float64 
+[2023-03-11 22:13:51,274 ] 85 root-INFO-Hypothesis PAY_4: float64, float64 
+[2023-03-11 22:13:51,287 ] 85 root-INFO-Hypothesis PAY_5: float64, float64 
+[2023-03-11 22:13:51,291 ] 85 root-INFO-Hypothesis PAY_6: float64, float64 
+[2023-03-11 22:13:51,304 ] 85 root-INFO-Hypothesis BILL_AMT1: float64, float64 
+[2023-03-11 22:13:51,310 ] 85 root-INFO-Hypothesis BILL_AMT2: float64, float64 
+[2023-03-11 22:13:51,316 ] 85 root-INFO-Hypothesis BILL_AMT3: float64, float64 
+[2023-03-11 22:13:51,322 ] 85 root-INFO-Hypothesis BILL_AMT4: float64, float64 
+[2023-03-11 22:13:51,328 ] 85 root-INFO-Hypothesis BILL_AMT5: float64, float64 
+[2023-03-11 22:13:51,334 ] 85 root-INFO-Hypothesis BILL_AMT6: float64, float64 
+[2023-03-11 22:13:51,339 ] 85 root-INFO-Hypothesis PAY_AMT1: float64, float64 
+[2023-03-11 22:13:51,344 ] 85 root-INFO-Hypothesis PAY_AMT2: float64, float64 
+[2023-03-11 22:13:51,349 ] 85 root-INFO-Hypothesis PAY_AMT3: float64, float64 
+[2023-03-11 22:13:51,355 ] 85 root-INFO-Hypothesis PAY_AMT4: float64, float64 
+[2023-03-11 22:13:51,360 ] 85 root-INFO-Hypothesis PAY_AMT5: float64, float64 
+[2023-03-11 22:13:51,365 ] 85 root-INFO-Hypothesis PAY_AMT6: float64, float64 
+[2023-03-11 22:13:51,370 ] 85 root-INFO-Hypothesis default.payment.next.month: int64, float64 
+[2023-03-11 22:13:51,383 ] 142 root-INFO-Write report in yaml file
+[2023-03-11 22:13:51,395 ] 147 root-INFO-Data validation artifact: DataValidationArtifact(report_file_path='/config/workspace/artifact/03112023__221347/data_validation/report.yaml')
+[2023-03-11 22:13:51,395 ] 24 root-INFO->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Transformation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-11 22:13:51,533 ] 75 root-INFO-Before resampling in training set Input: (24000, 24) Target:(24000,)
+[2023-03-11 22:13:53,005 ] 77 root-INFO-After resampling in training set Input: (36942, 24) Target:(36942,)
+[2023-03-11 22:13:53,006 ] 79 root-INFO-Before resampling in testing set Input: (6000, 24) Target:(6000,)
+[2023-03-11 22:13:53,415 ] 81 root-INFO-After resampling in testing set Input: (9278, 24) Target:(9278,)
+[2023-03-11 22:13:53,432 ] 44 root-INFO-Entered the save_object method of utils
+[2023-03-11 22:13:53,435 ] 48 root-INFO-Exited the save_object method of utils
+[2023-03-11 22:13:53,436 ] 44 root-INFO-Entered the save_object method of utils
+[2023-03-11 22:13:53,437 ] 48 root-INFO-Exited the save_object method of utils
+[2023-03-11 22:13:53,437 ] 112 root-INFO-Data transformation object DataTransformationArtifact(transform_object_path='/config/workspace/artifact/03112023__221347/data_transformation/transformer/transformer.pkl', transformed_train_path='/config/workspace/artifact/03112023__221347/data_transformation/transformed/train.npz', transformed_test_path='/config/workspace/artifact/03112023__221347/data_transformation/transformed/test.npz', target_encoder_path='/config/workspace/artifact/03112023__221347/data_transformation/target_encoder/target_encoder.pkl')
+[2023-03-11 22:13:53,443 ] 18 root-INFO->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Model Trainer <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-11 22:13:53,443 ] 45 root-INFO-Loading train and test array.
+[2023-03-11 22:13:53,452 ] 49 root-INFO-Splitting input and target feature from both train and test arr.
+[2023-03-11 22:13:53,452 ] 53 root-INFO-Train the model
+[2023-03-11 22:13:53,454 ] 15 root-INFO-Creating model resolver object
+[2023-03-11 22:13:53,454 ] 17 root-INFO-Reading file :/config/workspace/UCI_Credit_Card.csv
+[2023-03-11 22:13:53,520 ] 22 root-INFO-Loading transformer to transform dataset

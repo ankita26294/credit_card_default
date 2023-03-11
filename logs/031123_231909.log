@@ -1,0 +1,50 @@
+[2023-03-11 23:19:10,392 ] 14 root-INFO->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-11 23:19:10,392 ] 21 root-INFO-Exporting collection data as pandas dataframe
+[2023-03-11 23:19:10,865 ] 14 root-INFO-Found columns: Index(['_id', 'ID', 'LIMIT_BAL', 'SEX', 'EDUCATION', 'MARRIAGE', 'AGE',
+       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
+       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
+       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6',
+       'default.payment.next.month'],
+      dtype='object')
+[2023-03-11 23:19:10,865 ] 16 root-INFO-Dropping column: ID 
+[2023-03-11 23:19:10,875 ] 18 root-INFO-Row and columns in df: (30000, 25)
+[2023-03-11 23:19:10,876 ] 27 root-INFO-Save data in feature store
+[2023-03-11 23:19:10,876 ] 32 root-INFO-Create feature store folder if not available
+[2023-03-11 23:19:10,876 ] 36 root-INFO-Save df to feature store folder
+[2023-03-11 23:19:11,382 ] 41 root-INFO-split dataset into train and test set
+[2023-03-11 23:19:11,391 ] 45 root-INFO-create dataset directory folder if not available
+[2023-03-11 23:19:11,391 ] 50 root-INFO-Save df to feature store folder
+[2023-03-11 23:19:11,896 ] 62 root-INFO-Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/03112023__231910/data_ingestion/feature_store/default.csv', train_file_path='/config/workspace/artifact/03112023__231910/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/03112023__231910/data_ingestion/dataset/test.csv')
+[2023-03-11 23:19:11,897 ] 21 root-INFO-Exporting collection data as pandas dataframe
+[2023-03-11 23:19:12,463 ] 14 root-INFO-Found columns: Index(['_id', 'ID', 'LIMIT_BAL', 'SEX', 'EDUCATION', 'MARRIAGE', 'AGE',
+       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
+       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
+       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6',
+       'default.payment.next.month'],
+      dtype='object')
+[2023-03-11 23:19:12,464 ] 16 root-INFO-Dropping column: ID 
+[2023-03-11 23:19:12,473 ] 18 root-INFO-Row and columns in df: (30000, 25)
+[2023-03-11 23:19:12,473 ] 27 root-INFO-Save data in feature store
+[2023-03-11 23:19:12,474 ] 32 root-INFO-Create feature store folder if not available
+[2023-03-11 23:19:12,474 ] 36 root-INFO-Save df to feature store folder
+[2023-03-11 23:19:12,977 ] 41 root-INFO-split dataset into train and test set
+[2023-03-11 23:19:12,982 ] 45 root-INFO-create dataset directory folder if not available
+[2023-03-11 23:19:12,982 ] 50 root-INFO-Save df to feature store folder
+[2023-03-11 23:19:13,487 ] 62 root-INFO-Data ingestion artifact: DataIngestionArtifact(feature_store_file_path='/config/workspace/artifact/03112023__231910/data_ingestion/feature_store/default.csv', train_file_path='/config/workspace/artifact/03112023__231910/data_ingestion/dataset/train.csv', test_file_path='/config/workspace/artifact/03112023__231910/data_ingestion/dataset/test.csv')
+[2023-03-11 23:19:13,487 ] 19 root-INFO->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Validation <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[2023-03-11 23:19:13,487 ] 107 root-INFO-Reading base dataframe
+[2023-03-11 23:19:13,547 ] 40 root-INFO-selecting column name which contains null above to 0.2
+[2023-03-11 23:19:13,547 ] 43 root-INFO-Columns to drop: []
+[2023-03-11 23:19:13,549 ] 113 root-INFO-Reading train dataframe
+[2023-03-11 23:19:13,621 ] 115 root-INFO-Reading test dataframe
+[2023-03-11 23:19:13,630 ] 118 root-INFO-Drop null values colums from train df
+[2023-03-11 23:19:13,632 ] 40 root-INFO-selecting column name which contains null above to 0.2
+[2023-03-11 23:19:13,633 ] 43 root-INFO-Columns to drop: []
+[2023-03-11 23:19:13,637 ] 120 root-INFO-Drop null values colums from test df
+[2023-03-11 23:19:13,638 ] 40 root-INFO-selecting column name which contains null above to 0.2
+[2023-03-11 23:19:13,638 ] 43 root-INFO-Columns to drop: []
+[2023-03-11 23:19:13,641 ] 15 root-INFO-Creating model resolver object
+[2023-03-11 23:19:13,641 ] 17 root-INFO-Reading file :/config/workspace/UCI_Credit_Card.csv
+[2023-03-11 23:19:13,705 ] 22 root-INFO-Loading transformer to transform dataset
+[2023-03-11 23:19:13,720 ] 28 root-INFO-Loading model to make prediction
+[2023-03-11 23:19:14,574 ] 32 root-INFO-Target encoder to convert predicted column into categorical

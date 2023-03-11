@@ -1,0 +1,155 @@
+data_drift_within_test_dataset:
+  AGE:
+    pvalues: 0.884065148340403
+    same_distribution: true
+  BILL_AMT1:
+    pvalues: 0.49346883481992176
+    same_distribution: true
+  BILL_AMT2:
+    pvalues: 0.7494180645273059
+    same_distribution: true
+  BILL_AMT3:
+    pvalues: 0.2865023737276289
+    same_distribution: true
+  BILL_AMT4:
+    pvalues: 0.6947282680178959
+    same_distribution: true
+  BILL_AMT5:
+    pvalues: 0.7936328724082269
+    same_distribution: true
+  BILL_AMT6:
+    pvalues: 0.5691632283633263
+    same_distribution: true
+  EDUCATION:
+    pvalues: 0.7437503242413694
+    same_distribution: true
+  ID:
+    pvalues: 0.5520009799078486
+    same_distribution: true
+  LIMIT_BAL:
+    pvalues: 0.7989912570422417
+    same_distribution: true
+  MARRIAGE:
+    pvalues: 0.9986678703684901
+    same_distribution: true
+  PAY_0:
+    pvalues: 0.9998829675305296
+    same_distribution: true
+  PAY_2:
+    pvalues: 0.9985674624645305
+    same_distribution: true
+  PAY_3:
+    pvalues: 0.9986678703684901
+    same_distribution: true
+  PAY_4:
+    pvalues: 0.8351736719294905
+    same_distribution: true
+  PAY_5:
+    pvalues: 0.8351736719294905
+    same_distribution: true
+  PAY_6:
+    pvalues: 0.9999999962856242
+    same_distribution: true
+  PAY_AMT1:
+    pvalues: 0.7465874664308966
+    same_distribution: true
+  PAY_AMT2:
+    pvalues: 0.13077219152661845
+    same_distribution: true
+  PAY_AMT3:
+    pvalues: 0.7237256094602844
+    same_distribution: true
+  PAY_AMT4:
+    pvalues: 0.6976436683485515
+    same_distribution: true
+  PAY_AMT5:
+    pvalues: 0.902624291725207
+    same_distribution: true
+  PAY_AMT6:
+    pvalues: 0.9996095880989223
+    same_distribution: true
+  SEX:
+    pvalues: 0.999999990837133
+    same_distribution: true
+  default.payment.next.month:
+    pvalues: 1.0
+    same_distribution: true
+data_drift_within_train_dataset:
+  AGE:
+    pvalues: 1.0
+    same_distribution: true
+  BILL_AMT1:
+    pvalues: 0.9999999999874015
+    same_distribution: true
+  BILL_AMT2:
+    pvalues: 1.0
+    same_distribution: true
+  BILL_AMT3:
+    pvalues: 0.999999971498063
+    same_distribution: true
+  BILL_AMT4:
+    pvalues: 0.9999999999999994
+    same_distribution: true
+  BILL_AMT5:
+    pvalues: 1.0
+    same_distribution: true
+  BILL_AMT6:
+    pvalues: 0.9999999999995507
+    same_distribution: true
+  EDUCATION:
+    pvalues: 1.0
+    same_distribution: true
+  ID:
+    pvalues: 0.9999999999990073
+    same_distribution: true
+  LIMIT_BAL:
+    pvalues: 1.0
+    same_distribution: true
+  MARRIAGE:
+    pvalues: 1.0
+    same_distribution: true
+  PAY_0:
+    pvalues: 1.0
+    same_distribution: true
+  PAY_2:
+    pvalues: 1.0
+    same_distribution: true
+  PAY_3:
+    pvalues: 1.0
+    same_distribution: true
+  PAY_4:
+    pvalues: 1.0
+    same_distribution: true
+  PAY_5:
+    pvalues: 1.0
+    same_distribution: true
+  PAY_6:
+    pvalues: 1.0
+    same_distribution: true
+  PAY_AMT1:
+    pvalues: 1.0
+    same_distribution: true
+  PAY_AMT2:
+    pvalues: 0.9999930389776687
+    same_distribution: true
+  PAY_AMT3:
+    pvalues: 0.9999999999999999
+    same_distribution: true
+  PAY_AMT4:
+    pvalues: 0.9999999999999996
+    same_distribution: true
+  PAY_AMT5:
+    pvalues: 1.0
+    same_distribution: true
+  PAY_AMT6:
+    pvalues: 1.0
+    same_distribution: true
+  SEX:
+    pvalues: 1.0
+    same_distribution: true
+  default.payment.next.month:
+    pvalues: 1.0
+    same_distribution: true
+missing_values_within_base_dataset: []
+missing_values_within_test_dataset: []
+missing_values_within_train_dataset: []
