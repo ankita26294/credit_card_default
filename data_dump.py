@@ -4,6 +4,7 @@ import json
 # from default.config import mongo_client
 
 # Provide the mongodb localhost url to connect python to mongodb.
+
 client = pymongo.MongoClient("mongodb://localhost:27017/neurolabDB")
 DATA_FILE_PATH ="/config/workspace/UCI_Credit_Card.csv"
 DATABASE_NAME="default"
